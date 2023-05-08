@@ -6,24 +6,18 @@ import BannerPic from '../assets/banner-pic.png'
 
 const Banner = () => {
     return (
-        <section className='px-8 pb-20 mx-auto'>
+        <motion.section
+            variants={fadeIn('up', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }} className='px-8 pb-20 mx-auto'>
             <div className='flex flex-col justify-around gap-y-6 lg:flex-row lg:items-center text-black/70'>
                 <div className='text-center lg:text-left'>
                     <div className='pt-6 pb-3'>
-                        <motion.h1
-                            variants={fadeIn('up', 0.2)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{ once: false, amount: 0.7 }}
-                            className='text-[2rem] font-bold uppercase leading-[0.8] mb-4 lg:text-[3rem]'>
+                        <h1 className='text-[2rem] font-bold uppercase leading-[0.8] mb-4 lg:text-[3rem]'>
                             Brittany <span>Villegas</span>
-                        </motion.h1>
-                        <motion.div
-                            variants={fadeIn('up', 0.2)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{ once: false, amount: 0.7 }}
-                            className='text-[1.5rem] lg:text-[2.5rem] font-secondary font-semibold uppercase leading-[1]'>
+                        </h1>
+                        <div className='text-[1.5rem] lg:text-[2.5rem] font-secondary font-semibold uppercase leading-[1]'>
                             <span className='text-white'>I am a </span>
                             <TypeAnimation sequence={[
                                 'developer.',
@@ -43,7 +37,7 @@ const Banner = () => {
                                 className=''
                                 wrapper='span'
                                 repeat={Infinity} />
-                        </motion.div>
+                        </div>
                     </div>
                     <div className='max-w-lg mx-auto lg:mx-0 font-tertiary py-3'>
                         <p>I'm a web developer who is passionate about problem solving, interpersonal communications, strategic thinking, leading teams, empowering others, and building user-centric apps and services. </p>
@@ -66,7 +60,7 @@ const Banner = () => {
                 </div>
                 <img src={BannerPic} alt='picture of Brittany Villegas' className='lg:w-2/4' />
             </div>
-        </section>
+        </motion.section>
     )
 }
 
