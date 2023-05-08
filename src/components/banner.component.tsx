@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
+// import { motion } from 'framer-motion';
+// import { fadeIn } from '../variants';
 import BannerPic from '../assets/banner-pic.png'
 
 const Banner = () => {
