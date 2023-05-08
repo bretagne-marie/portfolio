@@ -6,7 +6,7 @@ import BannerPic from '../assets/banner-pic.png'
 
 const Banner = () => {
     return (
-        <section className='px-8 mx-auto'>
+        <section className='px-8 pb-20 mx-auto'>
             <div className='flex flex-col justify-around gap-y-6 lg:flex-row lg:items-center text-black/70'>
                 <div className='text-center lg:text-left'>
                     <div className='pt-6 pb-3'>
@@ -54,9 +54,7 @@ const Banner = () => {
                         </a>
                     </div>
                 </div>
-
                 <img src={BannerPic} alt='picture of Brittany Villegas' className='lg:w-2/4' />
-
             </div>
         </section>
     )
