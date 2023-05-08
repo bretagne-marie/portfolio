@@ -73,4 +73,7 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  .text-gradient {
+    @apply bg-gradient-to-br text-transparent bg-clip-text from-[#1A5E63] to-[#0DAB76] font-bold font-primary hover:from-[#0DAB76] hover:to-[#1A5E63];
+  }
 }
