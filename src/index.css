@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  background:
+    -webkit-radial-gradient(circle,
+      hsla(139, 70%, 75%, 1) 0%,
+      hsla(63, 90%, 76%, 1) 100%);
+  box-shadow: 5px 5px 20px rgba(13, 89, 46, 0.51);
+}
+
+.btn:hover {
+ background:
+    -webkit-radial-gradient(circle,
+      hsla(63, 90%, 76%, 1) 0%,
+      hsla(139, 70%, 75%, 1) 100%);
+}
+
+.gradient,
+.active {
+  background:
+    -webkit-radial-gradient(circle,
+      hsla(139, 70%, 75%, 1) 0%,
+      hsla(63, 90%, 76%, 1) 100%);
+}
+
+.active {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply text-lg leading-8 text-black/50;
+  }
+  .h2 {
+    @apply text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full text-black/50 font-bold;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
