@@ -50,7 +50,7 @@
 
 @layer base {
   body {
-    @apply text-lg leading-8 text-black/50;
+    @apply text-lg leading-8 text-black/70;
   }
   .h2 {
     @apply text-[32px] mb-6 tracking-[10%] uppercase;
@@ -69,9 +69,6 @@
   }
   .btn-link {
     @apply text-base;
-  }
-  .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .text-gradient {
     @apply bg-gradient-to-br text-transparent bg-clip-text from-[#1A5E63] to-[#0DAB76] font-bold font-primary hover:from-[#0DAB76] hover:to-[#1A5E63];

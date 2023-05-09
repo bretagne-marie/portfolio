@@ -10,6 +10,9 @@ export default {
         primary: '#0a0a0a',
         accent: '#B809C3',
       },
+      maxWidth: {
+        '3/4': '85%',
+      }
     },
     fontFamily: {
       primary: 'Ubuntu',
