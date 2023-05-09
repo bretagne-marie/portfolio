@@ -6,14 +6,16 @@ import BannerPic from '../assets/banner-pic.png'
 
 const Banner = () => {
     return (
-        <section className='px-8 mx-auto'>
+        <section className='px-8 pb-20 mx-auto'>
             <div className='flex flex-col justify-around gap-y-6 lg:flex-row-reverse lg:items-center text-black/70'>
-            <motion.img
+                <motion.img
                     variants={fadeIn('up', 0.7)}
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once: true, amount: 0.7 }}
-                    src={BannerPic} alt='picture of Brittany Villegas' className='w-2/4 self-center lg:pb-0 lg:w-1/3 xl:w-2/5' />
+                    src={BannerPic}
+                    alt='picture of Brittany Villegas'
+                    className='w-2/4 lg:w-1/3 self-center xl:w-2/5' />
                 <motion.div
                     variants={fadeIn('up', 0.7)}
                     initial='hidden'
