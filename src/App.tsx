@@ -9,7 +9,7 @@ import Header from './components/header.component';
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-b from-purple-500 via-pink-300 to-orange-300 bg-contain h-screen'>
+    <div className='bg-gradient-to-b from-purple-500 via-pink-300 to-orange-300 bg-fixed h-screen'>
       <Header />
       <Routes>
         <Route path='/' element={<Navigation />}>
