@@ -1,8 +1,8 @@
 const Blog = () => {
     return (
-        <div className="h-screen">
+        <section className="section h-screen">
             <h1>This is the Blog section</h1>
-        </div>
+        </section>
     )
 }
 

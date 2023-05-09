@@ -9,7 +9,9 @@ const About = () => {
     });
     return (
         <section className="section h-screen" ref={ref}>
-            <h1>This is the About section</h1>
+            <div className="container mx-auto">
+                <h1>This is the about section</h1>
+            </div>
         </section>
     )
 }
