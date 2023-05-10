@@ -1,8 +1,13 @@
+import underConstructionImg from '../assets/under-construction.png'
+
 const Work = () => {
     return (
-        <section className="section h-screen">
-            <h1>This is the Work section</h1>
-        </section>
+        <section className="section m-auto mx-3 pt-20 flex justify-center items-center">
+        <img 
+        src={underConstructionImg} 
+        alt="under construction image" 
+        className='lg:w-2/4'/>
+    </section>
     )
 }
 
