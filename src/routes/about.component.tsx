@@ -9,7 +9,7 @@ const About = () => {
     });
     return (
         <section className="container pb-24" ref={ref}>
-            <div className="mx-auto flex flex-col lg:flex-row lg:justify-center items-center max-w-3/4">
+            <div className="mx-auto flex flex-col lg:flex-row lg:justify-center items-center max-w-2/5">
                 <motion.img 
                  variants={fadeIn('right', 0.3)}
                  initial='hidden'
