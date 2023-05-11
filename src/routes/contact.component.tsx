@@ -1,12 +1,18 @@
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
 import underConstructionImg from '../assets/under-construction.png'
 
 const Contact = () => {
     return (
         <section className="section m-auto mx-3 pt-20 flex justify-center items-center">
-            <img 
-            src={underConstructionImg} 
-            alt="under construction image" 
-            className='lg:w-2/4'/>
+            <motion.img
+                variants={fadeIn('up', 0.1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: true, amount: 0.7 }}
+                src={underConstructionImg}
+                alt="under construction image"
+                className='lg:w-2/4' />
         </section>
     )
 }
