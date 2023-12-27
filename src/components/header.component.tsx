@@ -7,7 +7,7 @@ const Header = () => {
                     <a href='/'>
                         <img src={Logo} alt="logo" className='w-14 lg:w-20 self-end'/>
                     </a>
-                   <a href="/contact">
+                   <a href="https://calendly.com/brittany-villegas/30min" target='_blank'>
                     <button className='btn btn-sm lg:btn-lg'>
                         Work With Me
                     </button>

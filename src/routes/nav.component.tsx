@@ -37,7 +37,8 @@ const Navigation = () => {
                         </NavLink>
                         <NavLink
                             className='w-[60px] h-[60px] flex items-center justify-center'
-                            to={'/contact'}
+                            to={'https://calendly.com/brittany-villegas/30min'}
+                            target='_blank'
                         >
                             <BsChatSquareDots />
                         </NavLink>

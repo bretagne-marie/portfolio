@@ -52,7 +52,7 @@ const Banner = () => {
                         <p>I'm a web developer and scrum master who is passionate about problem solving, interpersonal communications, strategic thinking, leading teams, empowering others, and building user-centric apps and services. </p>
                     </div>
                     <div className='flex max-w-max gap-x-6 items-center mx-auto lg:mx-0 py-3'>
-                        <a href='/contact'><button className='btn btn-sm lg:btn-lg'>Contact Me</button></a>
+                        <a href='https://calendly.com/brittany-villegas/30min' target='_blank'><button className='btn btn-sm lg:btn-lg'>Let's Meet</button></a>
                         <a href='/work' className='font-semibold text-gradient text-[.875rem] lg:text-[1.125rem]'>My Portfolio</a>
                     </div>
                     <div className='flex text-[1.5rem] py-3 gap-x-6 max-w-max mx-auto lg:mx-0 lg:text-[1.5rem]'>
